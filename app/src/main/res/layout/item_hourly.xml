@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="92dp"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:strokeColor="#33FFFFFF"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="#22FFFFFF">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Saat -->
+        <TextView
+            android:id="@+id/tvHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:00"
+            android:textColor="#E8E8FF"
+            android:textSize="13sp"/>
+
+        <!-- Hava durumu ikonu -->
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/baseline_wb_cloudy_24"
+            app:tint="#FFFFFF"/>
+
+        <!-- Saatlik sıcaklık -->
+        <TextView
+            android:id="@+id/tvHourTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="7°C"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
